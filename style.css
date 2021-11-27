@@ -63,15 +63,18 @@ body {
 .img-container {
   position: relative;
   background-color: transparent;
+  
 }
 
 .img-container:hover .view-container {
   opacity: 0.5;
   z-index: 10000;
+  transition: 0.3s;
 }
 
 .img-container:hover .card-view {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .view-container {
@@ -83,6 +86,7 @@ body {
   border-radius: 15px;
   background-color: hsl(178, 100%, 50%);
   opacity: 0;
+  transition: 0.3s;
 }
 
 .card-view {
@@ -90,6 +94,7 @@ body {
   top: 45%;
   left: 40%;
   opacity: 0;
+  transition: 0.3s;
 }
 
 .creator-details {
@@ -99,8 +104,10 @@ body {
 
 .card-title {
   color: var(---clr-white);
+  width: fit-content;
   font-size: 22px;
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .card-note {
@@ -163,23 +170,38 @@ hr {
 
 .name {
   color: var(---clr-white);
+  transition: 0.3s;
 }
 
 .card-title:hover,
 .name:hover {
   color: var(---clr-cyan);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 @media (min-width: 376px) {
+  html,
   body {
+    height: 100%;
+  }
+  
+  .outer-container {
     display: flex;
+    /* max-width: 375px; */
+    height: 100%;
+    border: 1px solid red;
     align-items: center;
     justify-content: center;
-    flex: 1;
+
+    height: 100%;
+    padding: 0;
+    margin: 0;
   }
 
-  .outer-container {
-    max-width: 375px;
+  .inner-container {
+    
+    max-width: 327px;
+    border: 1px solid red;
   }
 }

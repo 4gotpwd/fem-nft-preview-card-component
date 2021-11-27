@@ -160,7 +160,6 @@ hr {
 .creator-details {
   gap: 1em;
   align-items: center;
-  /* border: 1px red solid; */
   padding-top: 0.1rem;
 }
 
@@ -188,9 +187,7 @@ hr {
   
   .outer-container {
     display: flex;
-    /* max-width: 375px; */
     height: 100%;
-    border: 1px solid red;
     align-items: center;
     justify-content: center;
 
@@ -200,8 +197,6 @@ hr {
   }
 
   .inner-container {
-    
     max-width: 327px;
-    border: 1px solid red;
   }
 }
